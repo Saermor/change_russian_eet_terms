@@ -31,7 +31,6 @@ REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Т\|т\)\еневы\(е\|х\|м\|ми\) \(Д
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Т\|т\)\еневы\(е\|х\|м\|ми\) \(В\|в\)ор\(ы\|ов\|ам\|ами\|ах\)~ ~Теневы\2 Вор\4~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(М\|м\)ор\(е\|ем\|я\|ю\) \(М\|м\)еч\(а\|ей\)~ ~Мор\2 Мечей~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~Аянтис~ ~Аджантис~
-
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(С\|с\)еверн\(ое\|ого\|ому\|ым\|ом\) \(Л\|л\)етоисчислени\(е\|я\|ю\|ем\|и\)~ ~Северн\2 Летоисчислени\4~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(С\|с\)овременн\(ое\|ого\|ому\|ым\|ом\) \(Л\|л\)етоисчислени\(е\|я\|ю\|ем\|и\)~ ~Современн\2 Летоисчислени\4~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Л\|л\)етоисчислени\(е\|я\|ю\|ем\|и\) \(Д\|д\)олин~ ~Летоисчислени\2 Долин~
@@ -41,57 +40,56 @@ REPLACE_TEXTUALLY CASE_SENSITIVE ~\(В\|в\)ерхняя \(Д\|д\)олина~ ~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(В\|в\)ерхнюю \(Д\|д\)олину~ ~Высокую Долину~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(В\|в\)ит\(ая\|ой\|ую\) \(Б\|б\)ашн\(я\|и\|е\|ю\|ей\)~ ~Спиральн\2 Башн\4~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(К\|к\)репост\(ь\|и\|ью\) \(М\|м\)ногострел~ ~Цитадел\2 Тысячи Стрел~
-
 REPLACE_TEXTUALLY CASE_SENSITIVE ~Лоудвотер~ ~Шумные Воды~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~Лоудвотера~ ~Шумных Вод~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~Лоудвотеру~ ~Шумным Водам~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~Лоудвотером~ ~Шумными Водами~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~Лоудвотере~ ~Шумных Водах~
-
 REPLACE_TEXTUALLY CASE_SENSITIVE ~%WBB%\(Т\|т\)ринт\(\|а\|у\|ом\|е\|ы\|ов\|ам\|ами\|ах\)%WBE%~ ~\1\2рент\3\4~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(К\|к\)репост\(ь\|и\|ью\) \(В\|в\)орона~ ~Цитадел\2 Ворона~
-
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(П\|п\)редпустынны\(е\|х\|м\|ми\) \(Г\|г\)ор\(\|ы\|ам\|ами\|ах\)~ ~Гор\4 Устья Пустыни~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(З\|з\)емны\(е\|х\|м\|ми\) \(Г\|г\)ор\(\|ы\|ам\|ами\|ах\)~ ~Гор\4 Земной Опоры~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Г\|г\)ор\(\|ы\|ам\|ами\|ах\) \(З\|з\)аставы \(Г\|г\)ноллов~ ~Гор\2 Гнольего Дозора~
-
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Р\|р\)авнин\(а\|ы\|е\|у\|ой\) \(Г\|г\)игантов~ ~Равнин\2 Великанов~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~%WBB%Антер\(\|а\|у\|ом\|е\)%WBE%~ ~\1Унтер\2\3~
-
 REPLACE_TEXTUALLY CASE_SENSITIVE ~(Призывание)~ ~(Вызывание)~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~(Подчинение/призывание)~ ~(Призывание/вызывание)~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~Подчинение)~ ~Призывание)~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Ш\|ш\)кол\(а\|ы\|е\|у\|ой\) подчинения~ ~\1кол\2 призывания~
-
 REPLACE_TEXTUALLY CASE_SENSITIVE ~холм\(ы\|ов\|ам\|ами\|ах\) Умар~ ~Холм\1 Умар~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Белот~ ~Баэлот~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~%WBB%Скай%WBE%~ ~\1Ски\2~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Эл\(\|ь\)минст\(е\|э\)р\(\|а\|е\|у\|ом\)~ ~Элминстер\3~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Белот\(\|а\|е\|у\|ом\)~ ~Баэлот\1~
+
 END
 
 BEGIN ~Change popular mistakes in translations of Russian modes to confirmed EET names~
 
 ALTER_TLK BEGIN
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Иреникус~ ~Айреникус~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Кэндлкип~ ~Кендлкип~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Аскатла~ ~Аткатла~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Горион~ ~Горайон~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Кхалид~ ~Халид~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Эл\(\|ь\)минст\(е\|э\)р~ ~Элминстер~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~%WBB%Ски%WBE%~ ~\1Скай\2~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Уотердип~ ~Вотердип~
+
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Иреникус\(\|а\|е\|у\|ом\)~ ~Айреникус\1~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Кэндлкип\(\|а\|е\|у\|ом\)~ ~Кендлкип\1~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Аскатл\(а\|ы\|е\|у\|ой\)~ ~Аткатл\1~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Горион\(\|а\|е\|у\|ом\)~ ~Горайон\1~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Кхалид\(\|а\|е\|у\|ом\)~ ~Халид\1~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Эл\(\|ь\)минст\(е\|э\)р\(\|а\|е\|у\|ом\)~ ~Элминстер\3~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~%WBB%Скай%WBE%~ ~\1Ски\2~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Уотердип\(\|а\|е\|у\|ом\)~ ~Вотердип\1~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~Имоэн~ ~Имоен~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Ха\(е\|э\)р[ ]*\(\|'\|`\)[ ]*\(Д\|д\)алис~ ~Хаэр'Далис~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Сирик~ ~Цирик~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~\(К\|Х\|Кх\)ел\(\|ь\)бен~ ~Хелбен~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Арунсун~ ~Арунсан~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Ха\(е\|э\)р[ ]*\(\|'\|`\)[ ]*\(Д\|д\)алис\(\|а\|е\|у\|ом\)~ ~Хаэр'Далис\4~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Сирик\(\|а\|е\|у\|ом\)~ ~Цирик\1~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~\(К\|Х\|Кх\)ел\(\|ь\)бен\(\|а\|е\|у\|ом\)~ ~Хелбен\3~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Арунсун\(\|а\|е\|у\|ом\)~ ~Арунсан\1~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(М\|м\)ор\(е\|я\|ю\|ем\) \(П\|п\)авших \(З\|з\)в\(е\|ё\)зд~ ~Мор\2 Упавших Звёзд~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~\(о\|О\)\(рден\(\|а\|у\|е\|ом\)\) \(C\|c\)ияющего \(С\|с\)ердца~ ~О\2 Лучезарного Сердца~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Хельм~ ~Хелм~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Х\|х\)ельмит~ ~\1елмит~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Хельм\(\|а\|е\|у\|ом\)~ ~Хелм\1~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Х\|х\)ельмит\(\|а\|е\|у\|ом\|ы\|ов\|ам\|ами\|ах\)~ ~\1елмит\2~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~Лолс~ ~Лолт~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Д\|д\)ворф~ ~\1варф~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Д\|д\)ворф~ ~\1варф~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Квэйл~ ~Квейл~
-REPLACE_TEXTUALLY CASE_SENSITIVE ~Элтан~ ~Эльтан~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Д\|д\)ворф\(\|а\|е\|у\|ом\|ы\|ов\|ам\|ами\|ах\)~ ~\1варф\2~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Квэйл\(\|а\|е\|у\|ом\)~ ~Квейл\1~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Элтан\(\|а\|е\|у\|ом\)~ ~Эльтан\1~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~Бальдур\(\|а\|е\|у\|ом\)~ ~Балдур\1~
+REPLACE_TEXTUALLY CASE_SENSITIVE ~\(Э\|э\)вераск\(а\|и\|е\|у\|ой\)~ ~\1вереск\2~
 REPLACE_TEXTUALLY CASE_SENSITIVE ~Фел\(\|ь\)дпост~ ~Фельдепост~
 
 END
